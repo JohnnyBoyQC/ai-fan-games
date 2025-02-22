@@ -33,28 +33,6 @@ body {
     border-bottom: 2px solid #34495e;
 }
 
-.avatar-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-.avatar {
-    width: 100px;
-    height: 100px;
-    transition: transform 0.2s;
-    cursor: pointer;
-}
-
-.avatar:hover {
-    transform: scale(1.1);
-}
-
-.clickable:hover {
-    opacity: 0.8;
-}
-
 .menu {
     height: 50%;
     padding: 15px;
