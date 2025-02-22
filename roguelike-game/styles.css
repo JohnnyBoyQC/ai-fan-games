@@ -41,8 +41,8 @@ body {
 }
 
 .avatar {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     transition: transform 0.2s;
     cursor: pointer;
 }
@@ -186,7 +186,17 @@ button:hover {
 
 .description-actions button {
     padding: 8px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 12px;
+    transition: background-color 0.2s;
+}
+
+.description-actions button:hover {
+    background-color: #c0392b;
 }
 
 .game-area {
@@ -221,9 +231,10 @@ button:hover {
     transform: scale(1.05);
 }
 
-.tile.player { background-color: #27ae60; }
-.tile.enemy { background-color: #e74c3c; }
-.tile.stairs { background-color: #f1c40f; }
-.tile.room { background-color: #8e44ad; }
-.tile.trap { background-color: #7f8c8d; }
-.tile.corridor { background-color: #5d4037; }
+.tile.player {
+    background-image: url('https://via.placeholder.com/40x40.png/27ae60/ffffff?text=T');
+}
+
+.tile.enemy {
+    background-image: url('https://via.placeholder.com/40x40.png/e74c3c/ffffff?text=E');
+}
