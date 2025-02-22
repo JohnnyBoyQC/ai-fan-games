@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demon Slayer Roguelike - Test 31</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="player-info">
+                <div class="avatar-container">
+                    <img src="https://via.placeholder.com/100x100.png/27ae60/ffffff?text=Tanjiro" class="avatar tanjiro clickable" id="tanjiro-avatar" alt="Tanjiro">
+                    <img src="https://via.placeholder.com/100x100.png/e67e22/ffffff?text=Nezuko" class="avatar nezuko clickable" id="nezuko-avatar" alt="Nezuko">
+                </div>
+                <p>Name: Tanjiro & Nezuko</p>
+                <p id="level">Level: 1</p>
+                <p id="tanjiro-hp">Tanjiro HP: 100/100</p>
+                <p id="nezuko-hp">Nezuko HP: 50/50</p>
+                <p id="mp">MP: 50/50</p>
+                <p id="exp">Exp: 0/100</p>
+            </div>
+            <div class="menu">
+                <button id="status-btn">Status</button>
+                <button id="inventory-btn">Inventory</button>
+                <button id="skill-tree-btn">Breathing Styles</button>
+                <button id="legend-btn">Legend</button>
+                <button id="back-btn">Back</button>
+            </div>
+        </div>
+        <div class="game-area" id="game-area"></div>
+        <div class="submenu" id="submenu">
+            <span class="close-btn">X</span>
+            <div id="submenu-content"></div>
+        </div>
+        <div class="description-submenu" id="description-submenu">
+            <span class="close-btn">X</span>
+            <div id="description-content"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
